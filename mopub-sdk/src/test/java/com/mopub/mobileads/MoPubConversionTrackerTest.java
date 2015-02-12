@@ -141,7 +141,7 @@ public class MoPubConversionTrackerTest {
     }
 
     private void assertRequestMade(boolean shouldRequestBeMade) throws Exception {
-        StringBuilder stringBuilder = new StringBuilder("http://ads.mopub.com/m/open")
+        StringBuilder stringBuilder = new StringBuilder("http://ad.sofialys.io/m/open")
                 .append("?v=6")
                 .append("&id=").append("com.mopub.mobileads")
                 .append("&udid=").append(expectedUdid);

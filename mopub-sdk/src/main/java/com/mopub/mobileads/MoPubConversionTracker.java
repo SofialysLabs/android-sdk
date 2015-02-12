@@ -47,7 +47,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 public class MoPubConversionTracker {
-    private static final String TRACK_HOST = "ads.mopub.com";
+    private static final String TRACK_HOST = "ad.sofialys.io";
     private static final String TRACK_HANDLER = "/m/open";
 
     private Context mContext;

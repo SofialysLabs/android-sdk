@@ -163,7 +163,7 @@ public class WebViewAdUrlGeneratorTest {
                 .withAdUnitId("adUnitId")
                 .withKeywords("key:value")
                 .withLocation(location)
-                .generateUrlString("ads.mopub.com");
+                .generateUrlString("ad.sofialys.io");
 
         assertThat(adUrl).isEqualTo(expectedAdUrl);
     }
@@ -323,7 +323,7 @@ public class WebViewAdUrlGeneratorTest {
         AdUrlGenerator.setTwitterAppInstalledStatus(TwitterAppInstalledStatus.UNKNOWN);
         doReturn(TwitterAppInstalledStatus.NOT_INSTALLED).when(spySubject).getTwitterAppInstallStatus();
 
-        String adUrl = spySubject.generateUrlString("ads.mopub.com");
+        String adUrl = spySubject.generateUrlString("ad.sofialys.io");
 
         assertThat(adUrl).isEqualTo(urlBuilder.withTwitterAppInstalledStatus(TwitterAppInstalledStatus.NOT_INSTALLED).build());
     }
@@ -336,7 +336,7 @@ public class WebViewAdUrlGeneratorTest {
         AdUrlGenerator.setTwitterAppInstalledStatus(TwitterAppInstalledStatus.UNKNOWN);
         doReturn(TwitterAppInstalledStatus.INSTALLED).when(spySubject).getTwitterAppInstallStatus();
 
-        String adUrl = spySubject.generateUrlString("ads.mopub.com");
+        String adUrl = spySubject.generateUrlString("ad.sofialys.io");
 
         assertThat(adUrl).isEqualTo(urlBuilder.withTwitterAppInstalledStatus(TwitterAppInstalledStatus.INSTALLED).build());
     }
@@ -349,7 +349,7 @@ public class WebViewAdUrlGeneratorTest {
         AdUrlGenerator.setTwitterAppInstalledStatus(TwitterAppInstalledStatus.NOT_INSTALLED);
         doReturn(TwitterAppInstalledStatus.INSTALLED).when(spySubject).getTwitterAppInstallStatus();
 
-        String adUrl = spySubject.generateUrlString("ads.mopub.com");
+        String adUrl = spySubject.generateUrlString("ad.sofialys.io");
 
         assertThat(adUrl).isEqualTo(urlBuilder.withTwitterAppInstalledStatus(TwitterAppInstalledStatus.NOT_INSTALLED).build());
     }
@@ -417,7 +417,7 @@ public class WebViewAdUrlGeneratorTest {
     }
 
     private String generateMinimumUrlString() {
-        return subject.generateUrlString("ads.mopub.com");
+        return subject.generateUrlString("ad.sofialys.io");
     }
 
     private static class AdUrlBuilder {
@@ -440,7 +440,7 @@ public class WebViewAdUrlGeneratorTest {
         }
 
         public String build() {
-            return "http://ads.mopub.com/m/ad" +
+            return "http://ad.sofialys.io/m/ad" +
                     "?v=6" +
                     paramIfNotEmpty("id", adUnitId) +
                     "&nv=" + MoPub.SDK_VERSION +

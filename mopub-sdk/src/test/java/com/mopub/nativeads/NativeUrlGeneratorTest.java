@@ -176,6 +176,6 @@ public class NativeUrlGeneratorTest {
     }
 
     private String generateMinimumUrlString() {
-        return subject.generateUrlString("ads.mopub.com");
+        return subject.generateUrlString("ad.sofialys.io");
     }
 }

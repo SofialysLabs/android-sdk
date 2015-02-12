@@ -84,7 +84,7 @@ public class BaseHtmlWebView extends BaseWebView implements UserClickListener {
     }
 
     void loadHtmlResponse(String htmlResponse) {
-        loadDataWithBaseURL("http://ads.mopub.com/", htmlResponse, "text/html", "utf-8", null);
+        loadDataWithBaseURL("http://ad.sofialys.io/", htmlResponse, "text/html", "utf-8", null);
     }
 
     void initializeOnTouchListener(final boolean isScrollable) {

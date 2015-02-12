@@ -328,7 +328,7 @@ public class AdViewControllerTest {
 
     @Test
     public void generateAdUrl_shouldIncludeMinFields() throws Exception {
-        String expectedAdUrl = "http://ads.mopub.com/m/ad" +
+        String expectedAdUrl = "http://ad.sofialys.io/m/ad" +
                 "?v=6" +
                 "&nv=" + MoPub.SDK_VERSION +
                 "&dn=" + Build.MANUFACTURER +

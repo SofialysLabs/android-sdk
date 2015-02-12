@@ -137,7 +137,7 @@ public class BaseHtmlWebViewTest {
         subject.loadHtmlResponse(htmlResponse);
 
         ShadowWebView.LoadDataWithBaseURL lastLoadData = shadowOf(subject).getLastLoadDataWithBaseURL();
-        assertThat(lastLoadData.baseUrl).isEqualTo("http://ads.mopub.com/");
+        assertThat(lastLoadData.baseUrl).isEqualTo("http://ad.sofialys.io/");
         assertThat(lastLoadData.data).isEqualTo(htmlResponse);
         assertThat(lastLoadData.mimeType).isEqualTo("text/html");
         assertThat(lastLoadData.encoding).isEqualTo("utf-8");

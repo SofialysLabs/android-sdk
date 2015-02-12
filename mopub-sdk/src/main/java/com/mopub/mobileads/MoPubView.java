@@ -65,8 +65,8 @@ public class MoPubView extends FrameLayout {
         public void onBannerCollapsed(MoPubView banner);
     }
 
-    public static final String HOST = "ads.mopub.com";
-    public static final String HOST_FOR_TESTING = "testing.ads.mopub.com";
+    public static final String HOST = "ad.sofialys.io";
+    public static final String HOST_FOR_TESTING = "ad.sofialys.io";
     public static final String AD_HANDLER = "/m/ad";
     public static final int DEFAULT_LOCATION_PRECISION = 6;
 
